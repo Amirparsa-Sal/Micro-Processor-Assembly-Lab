@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000033"
+    android:gravity="center_horizontal"
+    tools:context=".Control">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#990000"
+        android:text="Music Controller"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#990000"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        >
+
+        <ImageView
+        android:id="@+id/volumedownBTN"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/volumedown_image"
+        android:layout_margin="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/previousBTN"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/previous_image"
+            android:layout_margin="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/playpauseBTN"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pause_image"
+            android:layout_margin="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/nextBTN"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/next_image"
+            android:layout_margin="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/volumeupBTN"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/volumeup_image"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#990000"
+        android:text="LED Controller"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+
+        android:layout_marginHorizontal="20dp">
+
+        <Button
+            android:id="@+id/turnOnBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn on LEDS"
+
+            android:layout_marginHorizontal="10dp"
+        />
+
+        <Button
+            android:id="@+id/turnOffBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn off LEDS"
+            android:layout_marginHorizontal="10dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:layout_marginHorizontal="20dp">
+
+        <Button
+            android:id="@+id/randomBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Random Colors"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <Button
+            android:id="@+id/customBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Colors"
+            android:layout_marginHorizontal="10dp"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/rSlider"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#FF0000"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:valueFrom="0"
+        android:valueTo="255"
+        android:value="255"
+        android:stepSize="1"
+    />
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/gSlider"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#00FF00"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:valueFrom="0"
+        android:valueTo="255"
+        android:value="255"
+        android:stepSize="1"
+    />
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/bSlider"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#0000FF"
+        android:layout_marginHorizontal="20dp"
+        android:valueFrom="0"
+        android:valueTo="255"
+        android:value="255"
+        android:stepSize="1"
+        android:layout_marginBottom="10dp"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+        android:id="@+id/submitBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Color"
+        />
+
+        <TextView
+            android:id="@+id/colorTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:background="#FFFFFF"
+            android:layout_margin="5dp"
+        />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
