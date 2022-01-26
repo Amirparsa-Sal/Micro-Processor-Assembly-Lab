@@ -69,6 +69,8 @@ In each expermient we have 2 buttons and some LEDs. If the first button is press
 
 In both expirements the circuit diagram is as following picture:
 
+<img alt="Diagram" src="Diagram.png">
+
 - Experiment 1: Polling
 
   In this experiment I used the polling method to do the experiment. This means that we check the value of input pins inside the `loop()` function of the arduino and whenever a change happens we can respond to that change inside the loop.
