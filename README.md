@@ -11,7 +11,7 @@ I designed an audio system with various features:
 
 - A BLE module for communicating with smartphones.
 
-- An Android applications for controlling the system (Play, pause, and change the music + controlling the LED) 
+- An Android application for controlling the system (Play, pause, and change the music + controlling the LED) 
 
 ![](./10-Final%20Project(Bluetooth%20Audio%20System)/result.jpeg)
 
