@@ -3,6 +3,18 @@
 This repository contains my codes for Microprocessor and Assembly Language Lab at Amirkabir University of Technology.
 
 
+## Final Project
+
+I designed an audio system with various features:
+
+- An RGB LED which responses automatically with respect to the playing music 
+
+- A BLE module for communicating with smartphones.
+
+- An Android applications for controlling the system (Play, pause, and change the music + controlling the LED) 
+
+![](./10-Final%20Project(Bluetooth%20Audio%20System)/result.jpeg)
+
 
 ## Midterm Project
 
@@ -20,16 +32,3 @@ I proposed a line follower robot:
 
 ![](./06-%20Mini%20Project%20(Line%20Follower%20Robot)/Images/Robot5.jpg)
 
-
-
-## Final Project
-
-I designed an audio system with various features:
-
-- An RGB LED which responses automatically with respect to the playing music 
-
-- A BLE module for communicating with smartphones.
-
-- An Android applications for controlling the system (Play, pause, and change the music + controlling the LED) 
-
-![](./10-Final%20Project(Bluetooth%20Audio%20System)/result.jpeg)
